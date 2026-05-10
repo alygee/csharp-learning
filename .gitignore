@@ -18,6 +18,7 @@ TestResults/
 .vscode/
 .idea/
 *.sln.iml
+.codex
 
 # NuGet
 packages/

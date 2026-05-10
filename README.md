@@ -2,7 +2,7 @@
 
 Учебный репозиторий по C# и .NET с практикой по дням: от простых консольных программ до Web API на ASP.NET Core.
 
-Сейчас в репозитории реализованы задания `day1`-`day7`, а дни `8`-`30` оформлены как дорожная карта обучения.
+Сейчас в репозитории реализованы задания `day1`-`day9`, а дни `10`-`30` оформлены как дорожная карта обучения.
 
 ## Что внутри
 
@@ -24,7 +24,9 @@
 | 5 | Методы, разбиение по классам | `day5/Calculator` | готово |
 | 6 | `Array`, `List<T>`, `Dictionary<TKey, TValue>` | `day6/BookInventory` | готово |
 | 7 | Строки, `StringBuilder`, дата и время | `day7/OrderParser` | готово |
-| 8-20 | ООП, LINQ, JSON, async, события, generics, SOLID, тесты | - | в плане |
+| 8 | ООП: классы, свойства, инкапсуляция | `day8/OrderManagement` | готово |
+| 9 | `LINQ`: фильтры, проекции, группировки, агрегаты, Join | `day9/LinqPlayground` | готово |
+| 10-20 | Исключения, JSON, async, события, generics, SOLID, тесты | - | в плане |
 | 21-30 | ASP.NET Core Web API, EF Core, JWT, Docker | - | в плане |
 
 ## Структура репозитория
@@ -38,6 +40,8 @@
 |- day5/
 |- day6/
 |- day7/
+|- day8/
+|- day9/
 `- README.md
 ```
 
@@ -72,6 +76,8 @@ dotnet run --project day4/WhileDoWhileExample/WhileDoWhileExample.csproj
 dotnet run --project day5/Calculator/Calculator.csproj
 dotnet run --project day6/BookInventory/BookInventory.csproj
 dotnet run --project day7/OrderParser/OrderParser.csproj
+dotnet run --project day8/OrderManagement/OrderManagement.csproj
+dotnet run --project day9/LinqPlayground/LinqPlayground.csproj
 ```
 
 Тесты:
@@ -111,6 +117,14 @@ dotnet test day1/HelloWorld.Tests/HelloWorld.Tests.csproj
 ### День 7 - OrderParser
 
 `day7/OrderParser` - парсинг строки заказа вида `orderId;customer;product;quantity;price;orderDate` с валидацией и форматированным выводом результата.
+
+### День 8 - OrderManagement
+
+`day8/OrderManagement` - консольное управление заказами с пользователями, каталогом товаров и позициями заказа: тренировка классов, свойств и инкапсуляции.
+
+### День 9 - LinqPlayground
+
+`day9/LinqPlayground` - песочница LINQ на каталоге из 10 книг и 4 жанров: один образцовый запрос `Where` в двух синтаксисах и 9 заданий-заготовок (`Where + Select`, `OrderBy/ThenBy`, `GroupBy`, агрегаты, `Any/All`, `First/FirstOrDefault`, `Distinct`, пагинация через `Skip/Take`, `Join` с жанрами).
 
 ## План обучения
 
